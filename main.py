@@ -42,4 +42,5 @@ class MyMLR:
         self.coef=betas[1:]
 
     def predict(self,X_test):
-        pass
+        y_pred=np.dot(X_test,self.coef)+self.intercept
+        return y_pred
